@@ -22,7 +22,7 @@ import Heading from './components/Heading';
 
 import './page.css';
 
-import { Filter } from './work/constants';
+import { Filter } from './(main)/work/constants';
 
 type FilterHref = `/work?f=${Filter}`;
 

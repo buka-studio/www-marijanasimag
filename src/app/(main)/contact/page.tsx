@@ -2,7 +2,7 @@ import CopyToClipboard from '~/src/components/CopyToClipboard';
 import Button from '~/src/components/ui/Button';
 import ViewLogger from '~/src/components/ViewCounter';
 
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
 const links = [
   {

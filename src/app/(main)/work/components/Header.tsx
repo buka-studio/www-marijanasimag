@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 
 import Button from '~/src/components/ui/Button';
 
-import MainHeader from '../../components/Header';
+import MainHeader from '../../../components/Header';
 import { filters } from '../constants';
 
 function getFilterLabel(tag: string): string {

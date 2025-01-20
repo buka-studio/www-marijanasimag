@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import { Archivo, Inter } from 'next/font/google';
 
-import Footer from './components/Footer';
-import { ThemeProvider } from './components/ThemeProvider';
+import Footer from '../components/Footer';
+import { ThemeProvider } from '../components/ThemeProvider';
 
 import '~/tokens/style/global.css';
 import '~/tokens/style/theme-blue-dark.css';
@@ -34,8 +34,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className="">
-      <body className={`${inter.variable} ${archivo.variable} font-sans`}>{children}</body>
-    </html>
+    <>
+      <ThemeProvider>
+        <div className="main bg-main-background">
+          <div className="m-auto flex min-h-screen max-w-screen-2xl flex-col">
+            {children}
+            <Footer />
+          </div>
+        </div>
+      </ThemeProvider>
+      <div className="top-layer pointer-events-none fixed left-0 top-0 z-50 h-screen w-screen" />
+    </>
   );
 }

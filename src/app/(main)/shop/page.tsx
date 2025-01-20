@@ -4,7 +4,7 @@ import { ArrowRightIcon } from '~/src/components/icons';
 import Heading from '~/src/components/ui/Heading';
 import ViewLogger from '~/src/components/ViewCounter';
 
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
 import './page.css';
 

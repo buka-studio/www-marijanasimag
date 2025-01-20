@@ -1,4 +1,4 @@
-import ProjectsGrid from '~/src/app/work/components/ProjectsGrid';
+import ProjectsGrid from '~/src/app/(main)/work/components/ProjectsGrid';
 import ViewLogger from '~/src/components/ViewCounter';
 
 import { Filter, projects } from './constants';
